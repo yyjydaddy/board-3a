@@ -22,7 +22,7 @@ public class MemoServiceImpl implements MemoService {
         return 0;
     }
 
-    @Override
+   @Override
     public Memo read(Memo m) {
         MemoEntity e = memoRepository.getById(m.getMno());
         Memo memo = new Memo(); // DTO (Data Transfer Object) : Controller - Service or Controller - View
